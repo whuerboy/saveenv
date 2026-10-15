@@ -16,10 +16,10 @@ A small Bash tool for WSL/Linux: register **the current directory + active Pytho
 
 ## 安装
 
-先从 GitHub 克隆仓库（将以下地址替换为你实际发布的仓库地址）：
+先从 GitHub 克隆仓库：
 
 ```bash
-git clone https://github.com/YOUR_NAME/saveenv.git
+git clone https://github.com/whuerboy/saveenv.git
 cd saveenv
 bash install.sh
 source ~/.bashrc
