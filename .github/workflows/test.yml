@@ -1,0 +1,13 @@
+name: Bash tests
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check Bash syntax
+        run: bash -n src/saveenv.bash install.sh uninstall.sh tests/test.sh
+      - name: Run isolated tests
+        run: bash tests/test.sh
